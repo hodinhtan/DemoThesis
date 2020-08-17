@@ -54,32 +54,34 @@ def checkConfigFile(args):
 
 def configDataParser(config):
 	print(config)
+	payload = {}
 	try:
 		for BaoChay in config['BaoChay']:
 			payload[BaoChay['name']] = {
 				'xPos' : BaoChay['xPos'],
-				'yPos' : BaoChay['yPos'],
+				'yPos' : BaoChay['xPos'],
 				'entityLabel' : BaoChay['label'],
-				'type' : 'baochay'
+				'deviceType' : 'baochay'
 			}
 		for BaoKhoi in config['BaoKhoi']:
 			payload[BaoKhoi['name']] = {
 				'xPos' : BaoKhoi['xPos'],
 				'yPos' : BaoKhoi['yPos'],
 				'entityLabel' : BaoKhoi['label'],
-				'type' : 'baokhoi'
+				'deviceType' : 'baokhoi'
 			}
-		for PhunNuoc in config['PhunNuoc]:
+		for PhunNuoc in config['PhunNuoc']:
 			payload[PhunNuoc['name']] = {
 				'xPos' : PhunNuoc['xPos'],
 				'yPos' : PhunNuoc['yPos'],
 				'entityLabel' : PhunNuoc['label'],
-				'type' : 'phunnuoc'
+				'deviceType' : 'phunnuoc'
 			}
 	except Exception as e:
 		print('[ERROR] Parsing Error')
 		print(e)
 	gateway_payload['ToaNha'] = config['ToaNha']
+	print(payload)
 	return payload, gateway_payload
 
 
