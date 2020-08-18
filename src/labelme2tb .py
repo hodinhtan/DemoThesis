@@ -57,7 +57,7 @@ if __name__ == "__main__":
         genData['BaoChay'] = lBaoChay
         genData['BaoKhoi'] = lBaoKhoi
         genData['PhunNuoc'] = lPhunNuoc
-        
+
     print(genData)
     with open(output + "/" + name +"_config.json", 'w') as f:
        json.dump(genData, f, indent=2) 

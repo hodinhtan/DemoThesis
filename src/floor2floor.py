@@ -16,6 +16,7 @@ with open(TANG + ".png", "rb") as f:
     print(base64_data[0:10])
 data['imageData'] = ""
 data['imageData'] = str(base64_data)
+
 import cv2
 img = cv2.imread(TANG+ ".png")
 print(img.shape)
