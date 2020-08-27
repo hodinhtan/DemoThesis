@@ -15,5 +15,5 @@ for i in range(5):
 
     data['mapImageUrl'] = base64_data
     with open(TANG + "_map.json", "w") as f:
-        json.dump(data,f,indent=2)
+        json.dump(data, f, indent=2)
 

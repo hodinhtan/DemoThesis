@@ -1,0 +1,190 @@
+{
+  "Tang": "tang3",
+  "ToaNha": "ThuVienTaQuangBuu",
+  "BaoChay": [
+    {
+      "name": "tang3BaoChay1",
+      "label": "tang3BaoChay1",
+      "xPos": 0.24363057868450075,
+      "yPos": 0.35759634965750803
+    },
+    {
+      "name": "tang3BaoChay2",
+      "label": "tang3BaoChay2",
+      "xPos": 0.584733872041458,
+      "yPos": 0.36138390669410947
+    },
+    {
+      "name": "tang3BaoChay3",
+      "label": "tang3BaoChay3",
+      "xPos": 0.8409018752368368,
+      "yPos": 0.3563527067202456
+    },
+    {
+      "name": "tang3BaoChay4",
+      "label": "tang3BaoChay4",
+      "xPos": 0.14600765388856435,
+      "yPos": 0.5821120149846994
+    },
+    {
+      "name": "tang3BaoChay5",
+      "label": "tang3BaoChay5",
+      "xPos": 0.08491822082936476,
+      "yPos": 0.2144118832151763
+    },
+    {
+      "name": "tang3BaoChay6",
+      "label": "tang3BaoChay6",
+      "xPos": 0.8983384712023295,
+      "yPos": 0.14667363629433605
+    },
+    {
+      "name": "tang3BaoChay7",
+      "label": "tang3BaoChay7",
+      "xPos": 0.8518330755864172,
+      "yPos": 0.46041578185065385
+    },
+    {
+      "name": "tang3BaoChay8",
+      "label": "tang3BaoChay8",
+      "xPos": 0.47588615438186854,
+      "yPos": 0.8191076698574492
+    },
+    {
+      "name": "tang3BaoChay9",
+      "label": "tang3BaoChay9",
+      "xPos": 0.4411022691970245,
+      "yPos": 0.11675868753198947
+    },
+    {
+      "name": "tang3BaoChay10",
+      "label": "tang3BaoChay10",
+      "xPos": 0.5372077303591729,
+      "yPos": 0.6689121935814084
+    }
+  ],
+  "BaoKhoi": [
+    {
+      "name": "tang3BaoKhoi1",
+      "label": "tang3BaoKhoi1",
+      "xPos": 0.28842904107905487,
+      "yPos": 0.3608415825410826
+    },
+    {
+      "name": "tang3BaoKhoi2",
+      "label": "tang3BaoKhoi2",
+      "xPos": 0.0829467129586956,
+      "yPos": 0.16874993193722979
+    },
+    {
+      "name": "tang3BaoKhoi3",
+      "label": "tang3BaoKhoi3",
+      "xPos": 0.4433127477186837,
+      "yPos": 0.19790039966458667
+    },
+    {
+      "name": "tang3BaoKhoi4",
+      "label": "tang3BaoKhoi4",
+      "xPos": 0.900255357209915,
+      "yPos": 0.26176614721160446
+    },
+    {
+      "name": "tang3BaoKhoi5",
+      "label": "tang3BaoKhoi5",
+      "xPos": 0.8866579271685731,
+      "yPos": 0.35668158602589645
+    },
+    {
+      "name": "tang3BaoKhoi6",
+      "label": "tang3BaoKhoi6",
+      "xPos": 0.6224741655656948,
+      "yPos": 0.361971969028717
+    },
+    {
+      "name": "tang3BaoKhoi7",
+      "label": "tang3BaoKhoi7",
+      "xPos": 0.5886922501817884,
+      "yPos": 0.6692650309821728
+    },
+    {
+      "name": "tang3BaoKhoi8",
+      "label": "tang3BaoKhoi8",
+      "xPos": 0.8507645353898463,
+      "yPos": 0.565491631001775
+    },
+    {
+      "name": "tang3BaoKhoi9",
+      "label": "tang3BaoKhoi9",
+      "xPos": 0.4721821092915201,
+      "yPos": 0.8754854236771319
+    },
+    {
+      "name": "tang3BaoKhoi10",
+      "label": "tang3BaoKhoi10",
+      "xPos": 0.15148008179623995,
+      "yPos": 0.5278926677338909
+    }
+  ],
+  "PhunNuoc": [
+    {
+      "name": "tang3PhunNuoc1",
+      "label": "tang3PhunNuoc1",
+      "xPos": 0.20329574666379896,
+      "yPos": 0.35863090376468787
+    },
+    {
+      "name": "tang3PhunNuoc2",
+      "label": "tang3PhunNuoc2",
+      "xPos": 0.0851315874820345,
+      "yPos": 0.26380911932220363
+    },
+    {
+      "name": "tang3PhunNuoc3",
+      "label": "tang3PhunNuoc3",
+      "xPos": 0.49592042960095317,
+      "yPos": 0.1569756171932002
+    },
+    {
+      "name": "tang3PhunNuoc4",
+      "label": "tang3PhunNuoc4",
+      "xPos": 0.8982838493392462,
+      "yPos": 0.20588933538066134
+    },
+    {
+      "name": "tang3PhunNuoc5",
+      "label": "tang3PhunNuoc5",
+      "xPos": 0.8536799773319267,
+      "yPos": 0.5131170570747166
+    },
+    {
+      "name": "tang3PhunNuoc6",
+      "label": "tang3PhunNuoc6",
+      "xPos": 0.7932101610320796,
+      "yPos": 0.3591514478312479
+    },
+    {
+      "name": "tang3PhunNuoc7",
+      "label": "tang3PhunNuoc7",
+      "xPos": 0.5340362484338885,
+      "yPos": 0.36326570616485343
+    },
+    {
+      "name": "tang3PhunNuoc8",
+      "label": "tang3PhunNuoc8",
+      "xPos": 0.4918220829364712,
+      "yPos": 0.6693826434490945
+    },
+    {
+      "name": "tang3PhunNuoc9",
+      "label": "tang3PhunNuoc9",
+      "xPos": 0.15509365942585573,
+      "yPos": 0.47661581016476634
+    },
+    {
+      "name": "tang3PhunNuoc10",
+      "label": "tang3PhunNuoc10",
+      "xPos": 0.4829255469867505,
+      "yPos": 0.7631742298016922
+    }
+  ]
+}
