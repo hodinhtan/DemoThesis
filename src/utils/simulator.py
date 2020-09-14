@@ -20,7 +20,7 @@ class Simulator():
         self.gw_telemetry = 'v1/gateway/telemetry'
         self.tb_name = tb_name
         self.json_data = self.parseFile(json_file)
-        self.payload = self.createData(json_data)
+        self.payload = self.createData(self.json_data)
 
     def tbInstantce(self, token):
         try:
