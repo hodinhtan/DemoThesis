@@ -1,30 +1,38 @@
 import json
 import base64
 import argparse
+import os
 
+from utils.constants import *
 
-def convert(inpp):
-    try:
-        for  idx, file_name in enumerate(inpp):
-            PRE = "data:image/png;base64,"
-            with open(file_name , "rb") as f:
-                idata = f.read()
-                base64_data = PRE + base64.b64encode(idata).decode('utf-8')
-    #            print(base64_data[0:20])
+MODE = ["folder", "file"]
 
-            with open(file_name[:-4] + ".base64", "w") as f:
-                json.dump(base64_data,f,indent=2)
-    except  Exception as err:
-        print("something not right: ", err)
-    finally :
-        print("done!")
+def convert(inf, mode):
+	if mode == MODE[0]:
+		b64s = {}
+		try:
+			for file_name in os.listdir(inf):
+				pre = "data:image/png;base64,"
+				with open(inf + file_name , "rb") as f:
+					idata = f.read()
+					base64_data = pre + base64.b64encode(idata).decode('utf-8')
+					b64s[file_name[:-4]] = base64_data
 
-if __name__ == '__main__':
-    
-    parser = argparse.ArgumentParser(description="Chuyen png sang base64 string")
-    parser.add_argument("--input", required=True, help="input vao", nargs='+')
-    args = parser.parse_args()
+				with open(B64_PATH + file_name[:-4] + ".base64", "w") as f:
+					json.dump(base64_data,f,indent=2)
+			return b64s
+		except  exception as err:
+			print("convert error ", err)
+	elif mode == MODE[1]:
+		try:
+			pre = "data:image/png;base64,"
+			with open(inf + file_name , "rb") as f:
+				idata = f.read()
+				base64_data = pre + base64.b64encode(idata).decode('utf-8')
 
-    if (args.input):
-        IN = args.input
-    convert(IN)
+			with open(B64_PATH + file_name[:-4] + ".base64", "w") as f:
+				json.dump(base64_data,f,indent=2)
+			
+			return base64_data
+		except  exception as err:
+			print("convert error ", err)
