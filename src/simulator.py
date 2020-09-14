@@ -1,6 +1,6 @@
 """
 @filename : sensors simulator
-@author : Tan	Ho
+@author : TanHo
 @date : 29 August 2020
 @organization : hust.edu.vn
 @version : v1.0
@@ -14,14 +14,10 @@ import json
 import time
 import random
 from datetime import datetime
-from constants import *
-
+simulate_slots = 12
 DEBUG_MODE = False
-choice = {
-    "baochay":    ["normal", "high temp", "fire"],
-    "baokhoi": ["normal", "high temp", "smoke"],
-    "phunnuoc": ["on", "off"]
-}
+choice = ["normal", "high temp", "fire"]
+
 
 THINGSBOARD_HOST = ''
 MQTT_PORT = 1883
@@ -71,7 +67,7 @@ def on_disconnect(client, userdata, rc):
 
 def connectThingsboard():
 	try:
-		client = mqtt.Client('Simulator')
+		client = mqtt.Client('tanho')
 		client.connected_flag = False
 		client.on_connect = on_connect
 		client.username_pw_set(ACCESS_TOKEN)
@@ -101,6 +97,30 @@ def sendTelemetry(client, topic, payload):
 		raise ValueError('Telemetry Send')
 
 if __name__ == "__main__":
+	parser = argparse.ArgumentParser(description="Parking Slot Simulator", epilog="Platform Host IP & Access Token are mandatory fields")
+	parser.add_argument("--file", help="Telemetry file in JSON")
+	parser.add_argument("--host", required=True, help="Thingsboard Server IP")
+	parser.add_argument("--token", required=True, help="Thingsboard Access Token")
+	parser.add_argument("--interval", help="Telemetry interval in seconds")
+	parser.add_argument("--debug", default=False, help="Debug Level True / False")
+	args = parser.parse_args()
+	print("====================================================\n\tSmart Parking Pilot Setup Slot Simulator\n====================================================")
+
+	if(args.host):
+		THINGSBOARD_HOST = args.host
+	if(args.token):
+		ACCESS_TOKEN = args.token
+	if(args.debug):
+		if((args.debug).lower() == 'true'):
+			DEBUG_MODE = True
+			print('[INFO] Debug Mode ...[OK]')
+		elif ((args.debug).lower() == 'false'):
+			DEBUG_MODE = False
+	if(args.interval):
+		if int(args.interval) and int(args.interval) > 10:
+			INTERVAL = int(args.interval)
+			print('[INFO] Time Interval : {} seconds ...[OK]' .format(args.interval))
+
 	client = connectThingsboard()
 	if(args.file):
 		ret = parseFile(args.file)
