@@ -4,14 +4,17 @@ import os.path
 import json
 import time
 import base64
-import imghdr
+
 from utils.constants import *
 
 class Labelme2TB:
-    def checkConfigFile(self, args):
+    def __init__(self):
+        self.genData = {}
+
+    def checkConfigFile(self, cfg_file):
         try:
-            with open(args.file, 'rt') as file:
-                data = json.load(file)
+            with open(cfg_file, 'rt') as f:
+                data = json.load(f)
                 if(data): 
                     return data
                 else:
@@ -20,38 +23,46 @@ class Labelme2TB:
              print('[ERROR] Invalid JSON file')
              print(e)
 
-    def doiToaDo(points, h ,w):
+    def doiToaDo(self, points, h ,w):
         return [points[0][0]/w, points[0][1]/h]
 
-    def getLabelList(label, data,name, h, w):
+    def getLabelList(self, label, data, name, h, w):
         l = []
         i = 1
         for item in data:
             if item['label'] == label:
-                n = name+label+str(i)
+                n = name + label + str(i)
                 toado = doiToaDo(item['points'], h ,w)
                 x = {"name": n, "label":n, "xPos": toado[0], "yPos": toado[1], "type": label}
                 l.append(x)
                 i +=1
-        print(l)
         return l
 
-    def run(self, original):
-        data = checkConfigFile(args)
-        name = args.name
-        output = args.output
-            
-        genData = {}
-        if(data):
-            genData['Tang'] = name
-            genData['ToaNha'] = "ThuVienTaQuangBuu"
-            lBaoChay = getLabelList("BaoChay", data['shapes'], name, data['imageHeight'], data['imageWidth']) 
-            lBaoKhoi = getLabelList("BaoKhoi", data['shapes'], name, data['imageHeight'], data['imageWidth']) 
-            lPhunNuoc = getLabelList("PhunNuoc", data['shapes'], name, data['imageHeight'], data['imageWidth']) 
+    def setJsonData(self, key, data):
+        self.genData[key] = data
+
+    def run(self, original, name):
+        try:
+            data = checkConfigFile(args)
+            if not data: raise Exception 
+                
+            genData = {}
+            genData['Tang'] = self.name
+            n = self.name
+            s = data['shapes']
+            h = data['imageHeight']
+            w = data['imageWidth']
+
+            lBaoChay = getLabelList("BaoChay", s, n, h, w) 
+            lBaoKhoi = getLabelList("BaoKhoi", s, n, h, w) 
+            lPhunNuoc = getLabelList("PhunNuoc", s, n, h, w) 
             genData['BaoChay'] = lBaoChay
             genData['BaoKhoi'] = lBaoKhoi
             genData['PhunNuoc'] = lPhunNuoc
 
-        print(genData)
-        with open(output + "/" + name +"_config.json", 'w') as f:
-           json.dump(genData, f, indent=2) 
+            print(genData)
+            #with open(output + "/" + name +"_config.json", 'w') as f:
+            #   json.dump(genData, f, indent=2)
+
+        except Exception as e:
+            print (e)
