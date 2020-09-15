@@ -3,56 +3,56 @@
   "ToaNha": "ThuVienTaQuangBuu",
   "BaoChay": [
     {
-      "name": "tang1BaoChay1",
-      "label": "tang1BaoChay1",
+      "name": "tang1BaoChay01",
+      "label": "tang1BaoChay01",
       "xPos": 0.20807394831163933,
       "yPos": 0.3292053663570691
     },
     {
-      "name": "tang1BaoChay2",
-      "label": "tang1BaoChay2",
+      "name": "tang1BaoChay02",
+      "label": "tang1BaoChay02",
       "xPos": 0.4926240332012828,
       "yPos": 0.33343653250773986
     },
     {
-      "name": "tang1BaoChay3",
-      "label": "tang1BaoChay3",
+      "name": "tang1BaoChay03",
+      "label": "tang1BaoChay03",
       "xPos": 0.7680437653272966,
       "yPos": 0.3344685242518059
     },
     {
-      "name": "tang1BaoChay4",
-      "label": "tang1BaoChay4",
+      "name": "tang1BaoChay04",
+      "label": "tang1BaoChay04",
       "xPos": 0.21577060931899622,
       "yPos": 0.561609907120743
     },
     {
-      "name": "tang1BaoChay5",
-      "label": "tang1BaoChay5",
+      "name": "tang1BaoChay05",
+      "label": "tang1BaoChay05",
       "xPos": 0.20890398038106017,
       "yPos": 0.19721362229102163
     },
     {
-      "name": "tang1BaoChay6",
-      "label": "tang1BaoChay6",
+      "name": "tang1BaoChay06",
+      "label": "tang1BaoChay06",
       "xPos": 0.8382946613846443,
       "yPos": 0.20041279669762638
     },
     {
-      "name": "tang1BaoChay7",
-      "label": "tang1BaoChay7",
+      "name": "tang1BaoChay07",
+      "label": "tang1BaoChay07",
       "xPos": 0.7756649688737975,
       "yPos": 0.4738906088751289
     },
     {
-      "name": "tang1BaoChay8",
-      "label": "tang1BaoChay8",
+      "name": "tang1BaoChay08",
+      "label": "tang1BaoChay08",
       "xPos": 0.6112431616676101,
       "yPos": 0.7402476780185757
     },
     {
-      "name": "tang1BaoChay9",
-      "label": "tang1BaoChay9",
+      "name": "tang1BaoChay09",
+      "label": "tang1BaoChay09",
       "xPos": 0.3517449537823055,
       "yPos": 0.7341589267285861
     },
@@ -77,56 +77,56 @@
   ],
   "BaoKhoi": [
     {
-      "name": "tang1BaoKhoi1",
-      "label": "tang1BaoKhoi1",
+      "name": "tang1BaoKhoi01",
+      "label": "tang1BaoKhoi01",
       "xPos": 0.24806640256555365,
       "yPos": 0.33023735810113514
     },
     {
-      "name": "tang1BaoKhoi2",
-      "label": "tang1BaoKhoi2",
+      "name": "tang1BaoKhoi02",
+      "label": "tang1BaoKhoi02",
       "xPos": 0.17343897377853232,
       "yPos": 0.19618163054695562
     },
     {
-      "name": "tang1BaoKhoi3",
-      "label": "tang1BaoKhoi3",
+      "name": "tang1BaoKhoi03",
+      "label": "tang1BaoKhoi03",
       "xPos": 0.36291265798905864,
       "yPos": 0.13642930856553148
     },
     {
-      "name": "tang1BaoKhoi4",
-      "label": "tang1BaoKhoi4",
+      "name": "tang1BaoKhoi04",
+      "label": "tang1BaoKhoi04",
       "xPos": 0.6089794378419165,
       "yPos": 0.1385964912280702
     },
     {
-      "name": "tang1BaoKhoi5",
-      "label": "tang1BaoKhoi5",
+      "name": "tang1BaoKhoi05",
+      "label": "tang1BaoKhoi05",
       "xPos": 0.8392001509149216,
       "yPos": 0.2460268317853457
     },
     {
-      "name": "tang1BaoKhoi6",
-      "label": "tang1BaoKhoi6",
+      "name": "tang1BaoKhoi06",
+      "label": "tang1BaoKhoi06",
       "xPos": 0.8068289002075079,
       "yPos": 0.3338493292053663
     },
     {
-      "name": "tang1BaoKhoi7",
-      "label": "tang1BaoKhoi7",
+      "name": "tang1BaoKhoi07",
+      "label": "tang1BaoKhoi07",
       "xPos": 0.5314846255423505,
       "yPos": 0.3339525283797729
     },
     {
-      "name": "tang1BaoKhoi8",
-      "label": "tang1BaoKhoi8",
+      "name": "tang1BaoKhoi08",
+      "label": "tang1BaoKhoi08",
       "xPos": 0.5217506130918694,
       "yPos": 0.5445820433436532
     },
     {
-      "name": "tang1BaoKhoi9",
-      "label": "tang1BaoKhoi9",
+      "name": "tang1BaoKhoi09",
+      "label": "tang1BaoKhoi09",
       "xPos": 0.7761177136389359,
       "yPos": 0.5188854489164086
     },
@@ -151,56 +151,56 @@
   ],
   "PhunNuoc": [
     {
-      "name": "tang1PhunNuoc1",
-      "label": "tang1PhunNuoc1",
+      "name": "tang1PhunNuoc01",
+      "label": "tang1PhunNuoc01",
       "xPos": 0.17638181475193357,
       "yPos": 0.3292053663570691
     },
     {
-      "name": "tang1PhunNuoc2",
-      "label": "tang1PhunNuoc2",
+      "name": "tang1PhunNuoc02",
+      "label": "tang1PhunNuoc02",
       "xPos": 0.19381248820977173,
       "yPos": 0.2405572755417956
     },
     {
-      "name": "tang1PhunNuoc3",
-      "label": "tang1PhunNuoc3",
+      "name": "tang1PhunNuoc03",
+      "label": "tang1PhunNuoc03",
       "xPos": 0.39535936615732875,
       "yPos": 0.10959752321981418
     },
     {
-      "name": "tang1PhunNuoc4",
-      "label": "tang1PhunNuoc4",
+      "name": "tang1PhunNuoc04",
+      "label": "tang1PhunNuoc04",
       "xPos": 0.64368986983588,
       "yPos": 0.11176470588235289
     },
     {
-      "name": "tang1PhunNuoc5",
-      "label": "tang1PhunNuoc5",
+      "name": "tang1PhunNuoc05",
+      "label": "tang1PhunNuoc05",
       "xPos": 0.8754197321260139,
       "yPos": 0.22332301341589259
     },
     {
-      "name": "tang1PhunNuoc6",
-      "label": "tang1PhunNuoc6",
+      "name": "tang1PhunNuoc06",
+      "label": "tang1PhunNuoc06",
       "xPos": 0.819656668553103,
       "yPos": 0.49380804953560364
     },
     {
-      "name": "tang1PhunNuoc7",
-      "label": "tang1PhunNuoc7",
+      "name": "tang1PhunNuoc07",
+      "label": "tang1PhunNuoc07",
       "xPos": 0.7276740237690998,
       "yPos": 0.3360165118679051
     },
     {
-      "name": "tang1PhunNuoc8",
-      "label": "tang1PhunNuoc8",
+      "name": "tang1PhunNuoc08",
+      "label": "tang1PhunNuoc08",
       "xPos": 0.4478023014525559,
       "yPos": 0.3350877192982456
     },
     {
-      "name": "tang1PhunNuoc9",
-      "label": "tang1PhunNuoc9",
+      "name": "tang1PhunNuoc09",
+      "label": "tang1PhunNuoc09",
       "xPos": 0.4524052065647989,
       "yPos": 0.5446852425180598
     },

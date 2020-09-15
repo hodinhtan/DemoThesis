@@ -20,12 +20,13 @@ class Simulator():
         self.gw_telemetry = 'v1/gateway/telemetry'
         self.tb_name = tb_name
         self.json_data = self.parseFile(json_file)
+        #print (self.json_data)
         self.payload = self.createData(self.json_data)
 
     def tbInstantce(self, token):
+        print("create tb instance")
         try:
-            client = mqtt.Client()
-            client.connected_flag = False
+            client = mqtt.Client(self.tb_name)
             client.username_pw_set(token)
             client.connect(THINGSBOARD_HOST, MQTT_PORT, 60)
             client.loop_start()
@@ -35,15 +36,22 @@ class Simulator():
 
         
     def createData(self, json_data):
+        print("create data")
         payload = {}
-        for v in json_data.values():
-            if v in DEVICES:
-               x = json_data[v]
-               for y in x:
-                   payload[y['label']] = random.choice([ 10, 20, 24, 26, 28 ,30 ,40])
+        #print (json_data)
+        for idx, v in json_data.items():
+            #print(idx, v)
+            if idx in DEVICES:
+               for y in v:
+                   payload[y['label']] = []
+                   a = {}
+                   a['value'] = random.choice([ 10, 20, 24, 26, 28 ,30 ,40])
+                   a['ts'] =  time.time()
+                   payload[y['label']].append(a)
         return payload
         
     def parseFile(self, fd):
+        print("parse file: ", fd)
         with open(fd, 'rt') as file:
             data = json.load(file)
             if(data): 
@@ -56,21 +64,17 @@ class Simulator():
         if (ret[0] == 0):
             print('{} Telemetry sent ...[OK]' .format(datetime.now().strftime("%d/%m/%Y, %H:%M:%S")))
             time.sleep(0.5)
-            if (DEBUG_MODE):
-                print(payload)
         else:
             raise ValueError('Telemetry Send')
 
     def run(self, token):
         client = self.tbInstantce(token)
-        print(self.payload)
-        while not client.connected_flag:
-            print('[INFO] Connecting ...')
-            time.sleep(1)
         try:
             while True:
-                self.sendTelemetry(self, client, self.gw_telemetry, self.payload)
+                self.sendTelemetry(client, self.gw_telemetry, self.payload)
                 time.sleep(INTERVAL_TIME)
+                self.payload = self.createData(self.json_data)
+                print(self.payload)
         except KeyboardInterrupt as e:
             print('[INFO] program exiting ...')
             client.loop_stop()
