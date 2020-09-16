@@ -1,7 +1,7 @@
 import os
 from utils import png2base64 as p2b64
 from utils import png2config as p2cfg
-from utils import labelme2tb as l2tb
+from utils import labelme2cfg as l2c
 from utils import constants as C
 
 # danh sach cac widgets/cac tang
@@ -23,5 +23,5 @@ print ("result: ", res2)
 
 # chuyen labelme json thanh file config attribute cho thingsboard
 print("Running labelme to config file")
-nl = l2tb.Labelme2TB()
+nl = l2c.Labelme2TB()
 print (nl)

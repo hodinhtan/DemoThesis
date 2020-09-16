@@ -31,7 +31,9 @@ class Labelme2TB:
         i = 1
         for item in data:
             if item['label'] == label:
-                n = name + label + str(i)
+                if i<10: ii = '0'+str(i)
+                else: str(i)
+                n = name + label + ii
                 toado = doiToaDo(item['points'], h ,w)
                 x = {"name": n, "label":n, "xPos": toado[0], "yPos": toado[1], "type": label}
                 l.append(x)
