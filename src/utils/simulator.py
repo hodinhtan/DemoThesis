@@ -21,7 +21,7 @@ class Simulator():
         self.tb_name = tb_name
         self.json_data = self.parseFile(json_file)
         #print (self.json_data)
-        self.payload = self.createData(self.json_data)
+        self.payload = self.createDataTelemetry(self.json_data)
 
     def tbInstantce(self, token):
         print("create tb instance")
@@ -34,20 +34,47 @@ class Simulator():
         except Exception as e:
             print('[ERROR] : {}' .format(e))
 
-        
-    def createData(self, json_data):
+    def genDataNhietDo(self):
+        a = {}
+        a['value'] = random.choice([10,20,21,22,23,23,24,24,24,25,27,26,28,30,40])
+        a['ts'] =  time.time()*100000
+        return a
+    def genDataDieuHoa(self):
+        a = {}
+        a['value'] = random.choice(["on", "off"])
+        a['ts'] =  time.time()*100000
+        return a
+    def genDataBaoChay(self):
+        a = {}
+        a['value'] = random.choice(["normal", "warning", "fire"])
+        a['ts'] =  time.time()*100000
+        return a
+    def genDataBaoKhoi(self):
+        a = {}
+        a['value'] = random.choice(["normal", "warning", "smoke"])
+        a['ts'] =  time.time()*100000
+        return a
+    
+    def createDataTelemetry(self, json_data):
         print("create data")
         payload = {}
         #print (json_data)
         for idx, v in json_data.items():
             #print(idx, v)
             if idx in DEVICES:
-               for y in v:
-                   payload[y['label']] = []
-                   a = {}
-                   a['value'] = random.choice([ 10, 20, 24, 26, 28 ,30 ,40])
-                   a['ts'] =  time.time()
-                   payload[y['label']].append(a)
+                for y in v:
+                    payload[y['label']] = []
+                    a = {}
+                    if idx == "BaoChay":
+                        a = self.genDataBaoChay()
+                    elif idx == "BaoKhoi":
+                        a = self.genDataBaoKhoi()
+                    elif idx == "NhietDo":    
+                        a = self.genDataNhietDo()
+                    elif idx == "DieuHoa":
+                        a = self.genDataDieuHoa()
+                    else: continue
+                    payload[y['label']].append(a)
         return payload
         
     def parseFile(self, fd):
@@ -73,7 +100,7 @@ class Simulator():
             while True:
                 self.sendTelemetry(client, self.gw_telemetry, self.payload)
                 time.sleep(INTERVAL_TIME)
-                self.payload = self.createData(self.json_data)
+                self.payload = self.createDataTelemetry(self.json_data)
                 print(self.payload)
         except KeyboardInterrupt as e:
             print('[INFO] program exiting ...')

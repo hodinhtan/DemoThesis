@@ -12,7 +12,7 @@ LABELME_PATH = "/home/tanho/hoy/thesis/cfg/labelme/"
 WIDGET_PATH = "/home/tanho/hoy/thesis/cfg/widget/"
 DEVICE_PATH = "/home/tanho/hoy/thesis/cfg/devices/"
 
-DEVICES = ['BaoChay', 'BaoKhoi', 'Phunnuoc']
+DEVICES = ['BaoChay', 'BaoKhoi', 'Phunnuoc', 'NhietDo', 'DieuHoa']
 
 # =================================
 # THINGSBOARD

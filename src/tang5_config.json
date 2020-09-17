@@ -1,0 +1,233 @@
+{
+  "Tang": "tang5",
+  "ToaNha": "TVTQB",
+  "BaoChay": [
+    {
+      "name": "tang5BaoChay1",
+      "label": "tang5BaoChay1",
+      "xPos": 0.12603954126503905,
+      "yPos": 0.12448959066680076,
+      "type": "BaoChay"
+    },
+    {
+      "name": "tang5BaoChay2",
+      "label": "tang5BaoChay2",
+      "xPos": 0.3448533033138676,
+      "yPos": 0.1737704918032787,
+      "type": "BaoChay"
+    },
+    {
+      "name": "tang5BaoChay3",
+      "label": "tang5BaoChay3",
+      "xPos": 0.8556532751706185,
+      "yPos": 0.12147239263803682,
+      "type": "BaoChay"
+    },
+    {
+      "name": "tang5BaoChay4",
+      "label": "tang5BaoChay4",
+      "xPos": 0.8577640188559769,
+      "yPos": 0.4664387005933823,
+      "type": "BaoChay"
+    },
+    {
+      "name": "tang5BaoChay5",
+      "label": "tang5BaoChay5",
+      "xPos": 0.367367902624358,
+      "yPos": 0.8878406919440813,
+      "type": "BaoChay"
+    },
+    {
+      "name": "tang5BaoChay6",
+      "label": "tang5BaoChay6",
+      "xPos": 0.130261028635756,
+      "yPos": 0.4593985718595997,
+      "type": "BaoChay"
+    }
+  ],
+  "BaoKhoi": [
+    {
+      "name": "tang5BaoKhoi1",
+      "label": "tang5BaoKhoi1",
+      "xPos": 0.12674312249349187,
+      "yPos": 0.22204566026350198,
+      "type": "BaoKhoi"
+    },
+    {
+      "name": "tang5BaoKhoi2",
+      "label": "tang5BaoKhoi2",
+      "xPos": 0.4827552240906213,
+      "yPos": 0.17075329377451473,
+      "type": "BaoKhoi"
+    },
+    {
+      "name": "tang5BaoKhoi3",
+      "label": "tang5BaoKhoi3",
+      "xPos": 0.8605783437697883,
+      "yPos": 0.2109826008247008,
+      "type": "BaoKhoi"
+    },
+    {
+      "name": "tang5BaoKhoi4",
+      "label": "tang5BaoKhoi4",
+      "xPos": 0.8626890874551467,
+      "yPos": 0.5760635623051392,
+      "type": "BaoKhoi"
+    },
+    {
+      "name": "tang5BaoKhoi5",
+      "label": "tang5BaoKhoi5",
+      "xPos": 0.5024554984873004,
+      "yPos": 0.8838177612390627,
+      "type": "BaoKhoi"
+    },
+    {
+      "name": "tang5BaoKhoi6",
+      "label": "tang5BaoKhoi6",
+      "xPos": 0.1274467037219447,
+      "yPos": 0.5619833048375742,
+      "type": "BaoKhoi"
+    }
+  ],
+  "PhunNuoc": [
+    {
+      "name": "tang5PhunNuoc1",
+      "label": "tang5PhunNuoc1",
+      "xPos": 0.12885386617885036,
+      "yPos": 0.31557879915518455,
+      "type": "PhunNuoc"
+    },
+    {
+      "name": "tang5PhunNuoc2",
+      "label": "tang5PhunNuoc2",
+      "xPos": 0.6227678885527335,
+      "yPos": 0.1687418284220054,
+      "type": "PhunNuoc"
+    },
+    {
+      "name": "tang5PhunNuoc3",
+      "label": "tang5PhunNuoc3",
+      "xPos": 0.8647998311405053,
+      "yPos": 0.30049280901136477,
+      "type": "PhunNuoc"
+    },
+    {
+      "name": "tang5PhunNuoc4",
+      "label": "tang5PhunNuoc4",
+      "xPos": 0.8619855062266939,
+      "yPos": 0.6826712259881323,
+      "type": "PhunNuoc"
+    },
+    {
+      "name": "tang5PhunNuoc5",
+      "label": "tang5PhunNuoc5",
+      "xPos": 0.6361359318933371,
+      "yPos": 0.8858292265915719,
+      "type": "PhunNuoc"
+    },
+    {
+      "name": "tang5PhunNuoc6",
+      "label": "tang5PhunNuoc6",
+      "xPos": 0.12885386617885036,
+      "yPos": 0.6876998893694057,
+      "type": "PhunNuoc"
+    }
+  ],
+  "NhietDo": [
+    {
+      "name": "tang5NhietDo1",
+      "label": "tang5NhietDo1",
+      "xPos": 0.21046928867937803,
+      "yPos": 0.22606859096852056,
+      "type": "NhietDo"
+    },
+    {
+      "name": "tang5NhietDo2",
+      "label": "tang5NhietDo2",
+      "xPos": 0.5650742278196018,
+      "yPos": 0.30552147239263805,
+      "type": "NhietDo"
+    },
+    {
+      "name": "tang5NhietDo3",
+      "label": "tang5NhietDo3",
+      "xPos": 0.777555758812355,
+      "yPos": 0.2763552247812532,
+      "type": "NhietDo"
+    },
+    {
+      "name": "tang5NhietDo4",
+      "label": "tang5NhietDo4",
+      "xPos": 0.7747414338985437,
+      "yPos": 0.6313788594991452,
+      "type": "NhietDo"
+    },
+    {
+      "name": "tang5NhietDo5",
+      "label": "tang5NhietDo5",
+      "xPos": 0.5692957151903187,
+      "yPos": 0.8134164739012371,
+      "type": "NhietDo"
+    },
+    {
+      "name": "tang5NhietDo6",
+      "label": "tang5NhietDo6",
+      "xPos": 0.22172658833462325,
+      "yPos": 0.6203158000603439,
+      "type": "NhietDo"
+    }
+  ],
+  "Camera": [
+    {
+      "name": "tang5Camera1",
+      "label": "tang5Camera1",
+      "xPos": 0.5059734046295645,
+      "yPos": 0.5378457206074626,
+      "type": "Camera"
+    }
+  ],
+  "DieuHoa": [
+    {
+      "name": "tang5DieuHoa1",
+      "label": "tang5DieuHoa1",
+      "xPos": 0.03668472525153029,
+      "yPos": 0.2270743236447752,
+      "type": "DieuHoa"
+    },
+    {
+      "name": "tang5DieuHoa2",
+      "label": "tang5DieuHoa2",
+      "xPos": 0.491901780060508,
+      "yPos": 0.017881926983807705,
+      "type": "DieuHoa"
+    },
+    {
+      "name": "tang5DieuHoa3",
+      "label": "tang5DieuHoa3",
+      "xPos": 0.9520439034686555,
+      "yPos": 0.2049482047671729,
+      "type": "DieuHoa"
+    },
+    {
+      "name": "tang5DieuHoa4",
+      "label": "tang5DieuHoa4",
+      "xPos": 0.9534510659255611,
+      "yPos": 0.5579603741325556,
+      "type": "DieuHoa"
+    },
+    {
+      "name": "tang5DieuHoa5",
+      "label": "tang5DieuHoa5",
+      "xPos": 0.5172307042848097,
+      "yPos": 0.9813738308357638,
+      "type": "DieuHoa"
+    },
+    {
+      "name": "tang5DieuHoa6",
+      "label": "tang5DieuHoa6",
+      "xPos": 0.039499050165341595,
+      "yPos": 0.5700291662476115,
+      "type": "DieuHoa"
+    }
+  ]
+}

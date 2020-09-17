@@ -24,47 +24,57 @@ class Labelme2TB:
              print(e)
 
     def doiToaDo(self, points, h ,w):
-        return [points[0][0]/w, points[0][1]/h]
+        p = points
+ #       xmin = min(p[0][0],p[1][0],p[2][0],p[3][0])
+ #       ymin = min(p[0][1],p[1][1],p[2][1],p[3][1])
+ #       xmin = min(p[0][0],p[1][0],p[2][0],p[3][0])
+ #       xmin = min(p[0][0],p[1][0],p[2][0],p[3][0])
+ #       xmin = min(p[0][0],p[1][0],p[2][0],p[3][0])
+        return [p[0][0]/w, p[0][1]/h]
 
     def getLabelList(self, label, data, name, h, w):
+        print(label, data, name, h,w)
         l = []
         i = 1
         for item in data:
             if item['label'] == label:
-                if i<10: ii = '0'+str(i)
-                else: str(i)
-                n = name + label + ii
-                toado = doiToaDo(item['points'], h ,w)
+                n = name + label + str(i)
+                toado = self.doiToaDo(item['points'], h ,w)
                 x = {"name": n, "label":n, "xPos": toado[0], "yPos": toado[1], "type": label}
                 l.append(x)
                 i +=1
         return l
 
-    def setJsonData(self, key, data):
-        self.genData[key] = data
-
-    def run(self, original, name):
+    def run(self, cfg_file, name):
         try:
-            data = checkConfigFile(args)
+            data = self.checkConfigFile(cfg_file)
+          #  print(data)
             if not data: raise Exception 
                 
             genData = {}
-            genData['Tang'] = self.name
-            n = self.name
+            genData['Tang'] = name
+            genData['ToaNha'] = "TVTQB"
+            n = name
             s = data['shapes']
             h = data['imageHeight']
             w = data['imageWidth']
 
-            lBaoChay = getLabelList("BaoChay", s, n, h, w) 
-            lBaoKhoi = getLabelList("BaoKhoi", s, n, h, w) 
-            lPhunNuoc = getLabelList("PhunNuoc", s, n, h, w) 
+            lBaoChay = self.getLabelList("BaoChay", s, n, h, w) 
+            lBaoKhoi = self.getLabelList("BaoKhoi", s, n, h, w) 
+            lPhunNuoc = self.getLabelList("PhunNuoc", s, n, h, w) 
+            lNhietDo = self.getLabelList("NhietDo", s, n, h, w) 
+            lCamera = self.getLabelList("Camera", s, n, h, w) 
+            lDieuHoa = self.getLabelList("DieuHoa", s, n, h, w) 
             genData['BaoChay'] = lBaoChay
             genData['BaoKhoi'] = lBaoKhoi
             genData['PhunNuoc'] = lPhunNuoc
+            genData['NhietDo'] = lNhietDo
+            genData['Camera'] = lCamera
+            genData['DieuHoa'] = lDieuHoa
 
             print(genData)
-            #with open(output + "/" + name +"_config.json", 'w') as f:
-            #   json.dump(genData, f, indent=2)
-
+            with open(name +"_config.json", 'w') as f:
+               json.dump(genData, f, indent=2)
+            return genData
         except Exception as e:
             print (e)

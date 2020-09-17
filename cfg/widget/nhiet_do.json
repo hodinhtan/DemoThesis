@@ -1,0 +1,100 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "cards",
+    "typeAlias": "timeseries_table",
+    "type": "timeseries",
+    "title": "New widget",
+    "sizeX": 8,
+    "sizeY": 6.5,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "name": null,
+          "entityAliasId": "8547ba1c-dccd-10a6-f584-9b91523427db",
+          "dataKeys": [
+            {
+              "name": "ts",
+              "type": "timeseries",
+              "label": "ts",
+              "color": "#2196f3",
+              "settings": {
+                "useCellStyleFunction": false,
+                "cellStyleFunction": "",
+                "useCellContentFunction": false,
+                "cellContentFunction": ""
+              },
+              "_hash": 0.5635730723099965
+            }
+          ]
+        }
+      ],
+      "timewindow": {
+        "realtime": {
+          "interval": 1000,
+          "timewindowMs": 60000
+        },
+        "aggregation": {
+          "type": "NONE",
+          "limit": 200
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {
+        "showTimestamp": true,
+        "displayPagination": true,
+        "defaultPageSize": 10
+      },
+      "title": "Nhiet do",
+      "dropShadow": true,
+      "enableFullscreen": true,
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "padding": "5px 10px 5px 10px"
+      },
+      "useDashboardTimewindow": false,
+      "showLegend": false,
+      "widgetStyle": {},
+      "actions": {},
+      "showTitleIcon": false,
+      "iconColor": "rgba(0, 0, 0, 0.87)",
+      "iconSize": "24px",
+      "displayTimewindow": true,
+      "titleTooltip": ""
+    },
+    "row": 0,
+    "col": 0,
+    "id": "3bfcdbfb-b3fe-a2c2-c781-91ca490336fb"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "BaoChay_T1",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityList": [
+            "3d496eb0-e0b0-11ea-a248-39c427f409f4",
+            "3d36aa00-e0b0-11ea-a248-39c427f409f4",
+            "3d3f0e70-e0b0-11ea-a248-39c427f409f4",
+            "3d4bb8a0-e0b0-11ea-a248-39c427f409f4",
+            "3d474bd0-e0b0-11ea-a248-39c427f409f4",
+            "3d4ddb80-e0b0-11ea-a248-39c427f409f4"
+          ]
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "originalSize": {
+    "sizeX": 7,
+    "sizeY": 5
+  },
+  "originalColumns": 24
+}
