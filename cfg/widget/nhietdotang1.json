@@ -1,0 +1,145 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "charts",
+    "typeAlias": "basic_timeseries",
+    "type": "timeseries",
+    "title": "New widget",
+    "sizeX": 8,
+    "sizeY": 5,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "name": null,
+          "entityAliasId": "850bd40d-d310-bbf4-5729-5d008c5459b2",
+          "dataKeys": [
+            {
+              "name": "value",
+              "type": "timeseries",
+              "label": "temperature",
+              "color": "#2196f3",
+              "settings": {
+                "excludeFromStacking": false,
+                "hideDataByDefault": false,
+                "disableDataHiding": false,
+                "removeFromLegend": false,
+                "showLines": true,
+                "fillLines": false,
+                "showPoints": false,
+                "showPointShape": "circle",
+                "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                "showPointsLineWidth": 5,
+                "showPointsRadius": 3,
+                "showSeparateAxis": false,
+                "axisPosition": "left",
+                "thresholds": [
+                  {
+                    "thresholdValueSource": "predefinedValue"
+                  }
+                ],
+                "comparisonSettings": {
+                  "showValuesForComparison": true
+                }
+              },
+              "_hash": 0.427146555689526,
+              "units": null,
+              "decimals": null,
+              "funcBody": null,
+              "usePostProcessing": null,
+              "postFuncBody": null
+            }
+          ]
+        }
+      ],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "#fff",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {
+        "shadowSize": 4,
+        "fontColor": "#545454",
+        "fontSize": 10,
+        "xaxis": {
+          "showLabels": true,
+          "color": "#545454"
+        },
+        "yaxis": {
+          "showLabels": true,
+          "color": "#545454"
+        },
+        "grid": {
+          "color": "#545454",
+          "tickColor": "#DDDDDD",
+          "verticalLines": true,
+          "horizontalLines": true,
+          "outlineWidth": 1
+        },
+        "stack": false,
+        "tooltipIndividual": true,
+        "timeForComparison": "months",
+        "xaxisSecond": {
+          "axisPosition": "top",
+          "showLabels": true
+        },
+        "tooltipValueFormatter": "console.log(value)"
+      },
+      "title": "NhietDoTang1",
+      "dropShadow": true,
+      "enableFullscreen": true,
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "useDashboardTimewindow": true,
+      "showTitleIcon": false,
+      "iconColor": "rgba(0, 0, 0, 0.87)",
+      "iconSize": "24px",
+      "titleTooltip": "",
+      "widgetStyle": {},
+      "showLegend": true,
+      "legendConfig": {
+        "direction": "column",
+        "position": "bottom",
+        "showMin": false,
+        "showMax": false,
+        "showAvg": true,
+        "showTotal": false
+      },
+      "displayTimewindow": true
+    },
+    "row": 0,
+    "col": 0,
+    "id": "5cc8573d-6570-a552-196a-40e35ffb4d87"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "NhietDo_T1",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityList": [
+            "8bb77b00-f893-11ea-bda7-01f06266ab49",
+            "8bbcab20-f893-11ea-bda7-01f06266ab49",
+            "8bb02800-f893-11ea-bda7-01f06266ab49",
+            "8bbece00-f893-11ea-bda7-01f06266ab49",
+            "8bc117f0-f893-11ea-bda7-01f06266ab49"
+          ]
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "originalSize": {
+    "sizeX": 10,
+    "sizeY": 6
+  },
+  "originalColumns": 24
+}

@@ -53,13 +53,13 @@ def checkConfigFile(args):
 		print(e)
 
 def configDataParser(config):
-	print(config)
+	print("GOC", config)
 	payload = {}
 	try:
 		for BaoChay in config['BaoChay']:
 			payload[BaoChay['name']] = {
 				'xPos' : BaoChay['xPos'],
-				'yPos' : BaoChay['xPos'],
+				'yPos' : BaoChay['yPos'],
 				'entityLabel' : BaoChay['label'],
 				'deviceType' : 'baochay'
 			}
@@ -76,6 +76,27 @@ def configDataParser(config):
 				'yPos' : PhunNuoc['yPos'],
 				'entityLabel' : PhunNuoc['label'],
 				'deviceType' : 'phunnuoc'
+			}
+		for DieuHoa in config['DieuHoa']:
+			payload[DieuHoa['name']] = {
+				'xPos' : DieuHoa['xPos'],
+				'yPos' : DieuHoa['yPos'],
+				'entityLabel' : DieuHoa['label'],
+				'deviceType' : 'dieuhoa'
+			}
+		for NhietDo in config['NhietDo']:
+			payload[NhietDo['name']] = {
+				'xPos' : NhietDo['xPos'],
+				'yPos' : NhietDo['yPos'],
+				'entityLabel' : NhietDo['label'],
+				'deviceType' : 'nhietdo'
+			}
+		for Camera in config['Camera']:
+			payload[Camera['name']] = {
+				'xPos' : Camera['xPos'],
+				'yPos' : Camera['yPos'],
+				'entityLabel' : Camera['label'],
+				'deviceType' : 'camera'
 			}
 	except Exception as e:
 		print('[ERROR] Parsing Error')

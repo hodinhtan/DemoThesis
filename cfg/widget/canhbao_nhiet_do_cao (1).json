@@ -47,46 +47,51 @@
       "useDashboardTimewindow": false,
       "showLegend": false,
       "alarmSource": {
-        "type": "function",
+        "type": "entity",
+        "name": "alarms",
+        "entityAliasId": "850bd40d-d310-bbf4-5729-5d008c5459b2",
         "dataKeys": [
           {
-            "name": "createdTime",
+            "name": "status",
             "type": "alarm",
-            "label": "Created time",
-            "color": "#2196f3",
+            "label": "Status",
+            "color": "#4caf50",
             "settings": {
+              "columnWidth": "0px",
               "useCellStyleFunction": false,
               "cellStyleFunction": "",
               "useCellContentFunction": false,
               "cellContentFunction": ""
             },
-            "_hash": 0.021092237451093787
+            "_hash": 0.4711384319852452
+          },
+          {
+            "name": "startTime",
+            "type": "alarm",
+            "label": "Start time",
+            "color": "#4caf50",
+            "settings": {
+              "columnWidth": "0px",
+              "useCellStyleFunction": false,
+              "cellStyleFunction": "",
+              "useCellContentFunction": false,
+              "cellContentFunction": ""
+            },
+            "_hash": 0.3901175270225299
           },
           {
             "name": "originator",
             "type": "alarm",
             "label": "Originator",
-            "color": "#4caf50",
-            "settings": {
-              "useCellStyleFunction": false,
-              "cellStyleFunction": "",
-              "useCellContentFunction": false,
-              "cellContentFunction": ""
-            },
-            "_hash": 0.2780007688856758
-          },
-          {
-            "name": "type",
-            "type": "alarm",
-            "label": "Type",
             "color": "#f44336",
             "settings": {
+              "columnWidth": "0px",
               "useCellStyleFunction": false,
               "cellStyleFunction": "",
               "useCellContentFunction": false,
               "cellContentFunction": ""
             },
-            "_hash": 0.7323586880398418
+            "_hash": 0.5294196143699972
           },
           {
             "name": "severity",
@@ -94,27 +99,15 @@
             "label": "Severity",
             "color": "#ffc107",
             "settings": {
-              "useCellStyleFunction": false,
-              "useCellContentFunction": false
-            },
-            "_hash": 0.09927019860088193
-          },
-          {
-            "name": "status",
-            "type": "alarm",
-            "label": "Status",
-            "color": "#607d8b",
-            "settings": {
+              "columnWidth": "0px",
               "useCellStyleFunction": false,
               "cellStyleFunction": "",
               "useCellContentFunction": false,
               "cellContentFunction": ""
             },
-            "_hash": 0.6588418951443418
+            "_hash": 0.637962970430278
           }
-        ],
-        "entityAliasId": null,
-        "name": "alarms"
+        ]
       },
       "alarmSearchStatus": "ANY",
       "alarmsPollingInterval": 5,
