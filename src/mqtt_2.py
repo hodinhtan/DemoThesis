@@ -56,7 +56,7 @@ class MQTT_CREATE():
             for BaoChay in config['BaoChay']:
                 self.payload[BaoChay['name']] = {
                     'xPos' : BaoChay['xPos'],
-                    'yPos' : BaoChay['xPos'],
+                    'yPos' : BaoChay['yPos'],
                     'entityLabel' : BaoChay['label'],
                     'deviceType' : 'baochay'
                 }
