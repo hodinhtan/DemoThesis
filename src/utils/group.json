@@ -1,0 +1,32 @@
+{
+    "tang1NhietDo1":{
+        "dieuhoa": "tang1DieuHoa1",
+        "baochay": "tang1BaoChay2",
+        "phunnuoc": "tang1PhunNuoc1",
+        "baokhoi":  "tang1BaoKhoi1"
+    },
+    "tang1NhietDo2":{
+        "dieuhoa": "tang1DieuHoa4",
+        "baochay": "tang1BaoChay1",
+        "phunnuoc": "tang1PhunNuoc3",
+        "baokhoi":  "tang1BaoKhoi2"
+    },
+    "tang1NhietDo3":{
+        "dieuhoa": "tang1DieuHoa2",
+        "baochay": "tang1BaoChay3",
+        "phunnuoc": "tang1PhunNuoc2",
+        "baokhoi":  "tang1BaoKhoi3"
+    },
+    "tang1NhietDo4":{
+        "dieuhoa": "tang1DieuHoa3",
+        "baochay": "tang1BaoChay4",
+        "phunnuoc": "tang1PhunNuoc5",
+        "baokhoi":  "tang1BaoKhoi4"
+     },
+    "tang1NhietDo5":{
+        "baochay": "tang1BaoChay5",
+        "phunnuoc": "tang1PhunNuoc4",
+        "baokhoi":  "tang1BaoKhoi5"
+    }
+
+}

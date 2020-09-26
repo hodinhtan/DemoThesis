@@ -38,54 +38,14 @@ class Simulator():
         except Exception as e:
             print('[ERROR] : {}' .format(e))
 
-    def genDataCamera(self,idx):
-        self.payload[idx] = "https://www.youtube.com/watch?v=qo65StoT9XQ&ab_channel=Th%C6%B0vi%E1%BB%87nT%E1%BA%A1QuangB%E1%BB%ADu-%C4%90HB%C3%A1chkhoaH%C3%A0N%E1%BB%99i"
-
+    def genDataCamera(self):
+        self.payload[]
     def genDataNhietDo(self, k, v):
-        a = {}
-        a['value'] = random.choice(self.TEMP_CHOICE)
-        a['ts'] =  time.time()
-        self.payload[k].append(a)
-        if a['value'] < 25:
-           #turn off dieuhoa, 
-           adh = {}
-           adh['value'] = "off"
-           adh['ts'] =  time.time()
-           #baochay normal
-           abc = {}
-           abc['value'] = "normal"
-           abc['ts'] =  time.time()
-            
-        if a['value'] > 30 and a['value'] <= 40:
-           #turn on dieuhoa, 
-           adh = {}
-           adh['value'] = "on"
-           adh['ts'] =  time.time()
-           #baochay normal
-           abc = {}
-           abc['value'] = "normal"
-           abc['ts'] =  time.time()
-
-        if a['value'] > 40 and a['value'] <= 60:
-           #turn on dieuhoa, 
-           adh = {}
-           adh['value'] = "on"
-           adh['ts'] =  time.time()
-           #baochay normal
-           abc = {}
-           abc['value'] = "warning"
-           abc['ts'] =  time.time()
-
-        if a['value'] > 60:
-           #turn on dieuhoa, 
-           adh = {}
-           adh['value'] = "on"
-           adh['ts'] =  time.time()
-           #baochay normal
-           abc = {}
-           abc['value'] = "critical"
-           abc['ts'] =  time.time()
-
+        self.payload[k] = random.choice(self.TEMP_CHOICE)
+        time['ts'] =  time.time()
+        if tietDoy['value'] > 30 and tangxNhietDoy['value'] > 40:
+            #bat dieu hoa
+            #
         return tangxNhietDoy
     
     def createDataTelemetry(self):
@@ -95,7 +55,7 @@ class Simulator():
                 self.genDataNhietDo(idx, v)
             elif ('Camera' in idx):
                 self.payload[idx] = []
-                self.genDataCamera(idx)
+                self.genDataCamera(idx, v)
                 
         
     def parseFile(self, fd):
