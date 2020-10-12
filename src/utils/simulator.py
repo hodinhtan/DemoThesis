@@ -36,7 +36,15 @@ class Simulator():
 
     def genDataNhietDo(self):
         a = {}
-        a['value'] = random.choice([10,20,21,22,23,23,24,24,24,25,27,26,28,30,40])
+        normal = [] 
+        for t in range(21,30,1):
+          for i in range(100):
+            normal.append(t)
+        rare = [0,5,10,40,45,50]
+        choices = normal + rare
+        print ("------------------------------------- temp choices")
+        print (choices)
+        a['value'] = random.choice(choices)
         a['ts'] =  time.time()*100000
         return a
     def genDataDieuHoa(self):
@@ -46,12 +54,24 @@ class Simulator():
         return a
     def genDataBaoChay(self):
         a = {}
-        a['value'] = random.choice(["normal", "warning", "fire"])
+        normal = ["normal"] * 1000
+        warning = ["warning"] * 5
+        fire = ["fire"]
+        choices = normal + warning + fire
+        print ("------------------------------------- fire choices")
+        print (choices)
+        a['value'] = random.choice(choices)
         a['ts'] =  time.time()*100000
         return a
     def genDataBaoKhoi(self):
         a = {}
-        a['value'] = random.choice(["normal", "warning", "smoke"])
+        normal = ["normal"] * 1000
+        warning = ["warning"] * 5
+        fire = ["smoke"]
+        choices = normal + warning + fire
+        print ("------------------------------------- smoke choices")
+        print (choices)
+        a['value'] = random.choice(choices)
         a['ts'] =  time.time()*100000
         return a
     
